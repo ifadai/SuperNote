@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <padding android:bottom="12dp" android:left="12dp" android:right="12dp" android:top="12dp"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <ripple android:color="@color/colorBlackAlpha26">
+            <item>
+                <shape android:shape="oval">
+                    <padding android:bottom="12dp" android:left="12dp" android:right="12dp" android:top="12dp"/>
+                    <solid android:color="@color/colorBlackAlpha12"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <ripple xmlns:android="http://schemas.android.com/apk/res/android"
+            android:color="@color/colorBlackAlpha12">
+            <item android:drawable="@color/white"/>
+        </ripple>
+    </item>
+    <item android:state_selected="true">
+        <ripple xmlns:android="http://schemas.android.com/apk/res/android"
+            android:color="@color/colorBlackAlpha26">
+            <item android:drawable="@color/colorBlackAlpha12"/>
+        </ripple>
+    </item>
+</selector>

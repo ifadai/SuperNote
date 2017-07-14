@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:clipToPadding="true">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_note_list"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:elevation="0dp"/>
+        <fragment
+            android:id="@+id/fragment_note_folder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="app.fadai.supernote.module.notes.folderList.FolderListFragment"/>
+        <!--<FrameLayout-->
+            <!--android:id="@+id/frame_note_folder"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

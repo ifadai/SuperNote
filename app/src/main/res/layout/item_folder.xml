@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_folder_root"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_main_folder"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/iv_folder_list_ic"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/ic_folder_un_selected"
+        android:src="@drawable/ic_extension_white_18dp" />
+
+    <TextView
+        android:id="@+id/tv_folder_list_title"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@id/iv_folder_list_ic"
+        android:gravity="center_vertical"
+        android:maxEms="9"
+        android:maxLines="1"
+        android:text="标题"
+        android:textColor="@color/colorBlackAlpha87"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_folder_list_count"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@id/tv_folder_list_title"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlackAlpha54"
+        android:textSize="14sp" />
+</RelativeLayout>

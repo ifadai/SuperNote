@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="通用"
+        android:key="pref_cate_base">
+        <app.fadai.supernote.widget.ThemeChoicePreference
+            android:key="theme" />
+        <SwitchPreference
+            android:key="is_use_recycle"
+            android:title="废纸篓"
+            android:summary="删除的便签可以在废纸篓中恢复"
+            android:defaultValue="true"/>
+        <PreferenceScreen
+            android:title="隐私密码"
+            android:key="screen_lock">
+            <intent
+                android:action="com.app.fadai.supernote.LOCK_SETTING" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="关于"
+            android:key="about">
+            <intent
+                android:action="com.app.fadai.supernote.APP_ABOUT"/>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+</PreferenceScreen>

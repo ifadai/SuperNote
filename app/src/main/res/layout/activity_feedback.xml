@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/include_toolbar"/>
+
+        <EditText
+            android:id="@+id/edit_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_margin="8dp"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:hint="请描述你的建议或问题，我将尽力为你改进！"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edit_feedback_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="联系方式（qq、邮箱等。可以不写）"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_feedback_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:text="你也可直接发邮件至 i_fadai@163.com（点击复制）"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlackAlpha54"/>
+
+    </LinearLayout>
+
+</FrameLayout>

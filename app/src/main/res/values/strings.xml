@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">发呆便签</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="note_privacy_and_recycle">私密便签无法直接预览，请先恢复！</string>
+
+    <string name="database_content_one">点击右上角，可以切换视图样式！</string>
+    <string name="database_content_two">长按便签，可以进行批量操作！</string>
+    <string name="database_content_three">在设置中，可以切换主题颜色！</string>
+    <string name="database_content_four">点击右下角，创建新的便签！</string>
+    <string name="database_content_five">
+        您现在使用的是该软件的第一个版本，使用中如果遇到问题，或者有什么建议,请一定要记得给我们发送反馈！\n本软件无毒无广告，功能也会在后续的开发中逐渐完善，如果您觉得好用，可以在支持一下开发者！\n我现在只是一名即将毕业的大学生，还没有找到工作，开发这个软件纯粹是出于兴趣，也没有想加入广告，软件的进一步完善也需要你们的反馈和支持！\n非常感谢！
+    </string>
+
+    <string name="dev_say">
+
+        这款软件最早动工于2016年12初，那时候学校已停课，我一边投着简历，一边写下了这款软件的第一行代码，
+        一直记得那个冬天，我一个人在小出租屋里呵着冷气通宵敲着代码，每天早上起来，手机冰的都不敢碰，
+        其中心酸，不足为道。\n
+
+      那时候我自学Android已有五个多月，出去面试时，每每提及于此，面试官都是一副不屑的表情，
+        还有遇到那些伪装成招聘的培训机构，各式各样的质疑和嘲讽，就这样一直到12月底。
+        我终于没有再坚持下去，买了31号回家的的车票，想着来年再战。\n
+
+      春暖花开时，已是2017年2月，我又离了家乡，还是在那个小出租屋里，我把这款App上传了应用商店，
+        Bug一大堆，现在想想，实在惭愧。之后还算顺利，找了工作，忙忙碌碌。到了最近，手头清闲，
+        看软件在应用商店还有几个下载，便想着修复一下Bug。回头看了看代码，实在是一团糟，无从下手。
+        于是决定对整个项目进行重构，正好最近在学MVP模式，便采用了MVP设计模式。\n
+
+      回头想想我学习Android这一年来的种种，感触颇多，蹒跚学步到摸着石头过河，自学踩过的坑我都躺过，
+        也曾想过去培训，可是心里不服气：自己凭什么不能？记得学校当时安排实习的那家培训机构，
+        那老师咋呼我：像你们这种自学的，根本找不到工作！还有某培训机构老师，我一月份回家后，
+        还给我打电话：xxx，你找到工作了吗？\n
+
+     有时候，翻一翻原来写的代码，那些臃肿到上百行代码的方法，那些不知所谓的阅读顺序，
+        那些千奇百怪的命名，都是我们逝去的学生岁月。
+
+</string>
+
+    <string name="about_key_to_alipay">to_alipay</string>
+    <string name="about_key_about_dev">about_dev</string>
+    <string name="about_key_to_market">to_market</string>
+    <string name="about_key_check_version">check_version</string>
+    <string name="about_key_to_feedback">to_feekback</string>
+
+    <string name="alipay_qr_code">HTTPS://QR.ALIPAY.COM/FKX02204SZGKIYYQSFPR54</string>
+    <string name="my_email">i_fadai@163.com</string>
+    <string name="github"><u>https://github.com/ifadai</u></string>
+    <string name="jian_shu"><u>http://www.jianshu.com/u/707e22330793</u></string>
+    <string name="csdn"><u>http://blog.csdn.net/ifadai</u></string>
+    <string name="app_github">本软件已开源，地址：<u>https://github.com/ifadai/SuperNote</u></string>
+    <string name="bmob_app_id">f96303e8f10b7aa4e7a67d9321019137</string>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <include layout="@layout/include_toolbar"/>
+        <LinearLayout
+            android:id="@+id/ll_image_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="?colorPrimary">
+            <TextView
+                android:id="@+id/tv_image_down"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:drawableTop="@drawable/tv_down_pressed"
+                android:text="下载"
+                android:textSize="10sp"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:onClick="onClick"/>
+            <TextView
+                android:id="@+id/tv_image_del"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:drawableTop="@drawable/tv_delete_pressed"
+                android:text="删除"
+                android:textSize="10sp"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:onClick="onClick"/>
+            <!--<Button-->
+                <!--android:id="@+id/btn_image_save"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="4dp"-->
+                <!--android:drawableTop="@drawable/ic_file_download_black_24dp"-->
+                <!--android:background="?selectableItemBackground"-->
+                <!--android:text="保存"-->
+                <!--android:textSize="12sp"-->
+                <!--android:alpha="0.54"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_image_delete"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:padding="4dp"-->
+                <!--android:drawableTop="@drawable/ic_delete_black_24dp"-->
+                <!--android:background="?selectableItemBackground"-->
+                <!--android:text="删除"-->
+                <!--android:textSize="12sp"-->
+                <!--android:alpha="0.54"/>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_edit_folder"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+    <CheckBox
+        android:id="@+id/cb_edit_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"/>
+    <LinearLayout
+        android:id="@+id/ll_edit_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/cb_edit_folder"
+        android:layout_marginLeft="24dp">
+        <TextView
+            android:id="@+id/tv_edit_folder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:text="名字"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlackAlpha87"
+            android:maxLines="1"
+            android:maxEms="9"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textinput_edit_folder_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:hintEnabled="false"
+            app:errorEnabled="false">
+            <EditText
+                android:id="@+id/et_edit_folder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlackAlpha87"
+                android:maxLength="10"
+                android:minWidth="48dp"
+                android:text="4555"/>
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/tv_edit_folder_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="包含 2 便签"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlackAlpha54"
+
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_edit_folder_rename"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:background="@drawable/btn_folder_edit_pressed"
+        android:alpha="0.54"
+        android:src="@drawable/ic_create_black_24dp"/>
+
+
+</RelativeLayout>

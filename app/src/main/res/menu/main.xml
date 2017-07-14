@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_note_search"
+        android:title="搜索"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menu_note_show_mode"
+        android:title="显示模式"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/menu_note_check_all"
+        android:title="全选"
+        android:icon="@drawable/ic_check_box_white_24dp"
+        app:showAsAction="always|withText"
+        android:visible="false"/>
+
+</menu>

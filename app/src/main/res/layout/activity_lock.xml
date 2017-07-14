@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="?colorPrimary">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock_open_white_48dp"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/tv_lock_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="请输入隐私密码"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <app.fadai.supernote.widget.LockView
+            android:id="@+id/lockview_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/ll_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_lock_redraw"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="重绘"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlackAlpha87"
+                android:background="@drawable/btn_dialog_pressed"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:background="@color/colorBlackAlpha12"/>
+
+            <Button
+                android:id="@+id/btn_lock_ok"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="确认"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlackAlpha87"
+                android:background="@drawable/btn_dialog_pressed"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

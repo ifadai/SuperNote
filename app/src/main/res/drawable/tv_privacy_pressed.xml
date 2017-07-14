@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="oval">
+                    <solid android:color="@color/colorTransparency"/>
+                    <stroke android:color="@color/colorWhiteAlpha30"
+                        android:width="0.5dp"/>
+                    <padding android:bottom="7dp" android:left="7dp" android:right="7dp" android:top="7dp"/>
+                    <size android:height="32dp" android:width="32dp" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:src="@drawable/ic_lock_white_18dp" android:alpha="0.3"/>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="false" android:state_enabled="true">
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="oval">
+                    <solid android:color="@color/colorTransparency"/>
+                    <stroke android:color="@color/white"
+                        android:width="0.5dp"/>
+                    <padding android:bottom="7dp" android:left="7dp" android:right="7dp" android:top="7dp"/>
+                    <size android:height="32dp" android:width="32dp" />
+                </shape>
+            </item>
+            <item>
+                <transition
+                    android:opacity="transparent"
+                    >
+                    <item android:drawable="@drawable/ic_lock_white_18dp" />
+                </transition>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true" android:state_enabled="true">
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="oval">
+                    <solid android:color="@color/colorBlackAlpha12"/>
+                    <stroke android:color="@color/white"
+                        android:width="0.5dp"/>
+                    <padding android:bottom="7dp" android:left="7dp" android:right="7dp" android:top="7dp"/>
+                    <size android:height="32dp" android:width="32dp" />
+                </shape>
+            </item>
+            <item>
+                <transition
+                    android:opacity="transparent"
+                    >
+                    <item android:drawable="@drawable/ic_lock_white_18dp" />
+                </transition>
+            </item>
+        </layer-list>
+    </item>
+</selector>

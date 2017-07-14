@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_folder_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorBlackAlpha12"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_folder_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:background="@drawable/bg_main_folder">
+
+        <ImageView
+            android:id="@+id/img_folder_privacy_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_folder_un_selected"
+            android:src="@drawable/ic_lock_white_18dp"/>
+
+        <TextView
+            android:id="@+id/tv_folder_privacy_title"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@id/img_folder_privacy_icon"
+            android:gravity="center_vertical"
+            android:maxEms="9"
+            android:maxLines="1"
+            android:text="私密"
+            android:textColor="@color/colorBlackAlpha87"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_folder_recycle_bin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:background="@drawable/bg_main_folder">
+
+        <ImageView
+            android:id="@+id/img_folder_recycle_bin_ic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_folder_un_selected"
+            android:src="@drawable/ic_delete_white_18dp"/>
+
+        <TextView
+            android:id="@+id/tv_folder_recycle_bin_title"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@id/img_folder_recycle_bin_ic"
+            android:gravity="center_vertical"
+            android:maxEms="9"
+            android:maxLines="1"
+            android:text="废纸篓"
+            android:textColor="@color/colorBlackAlpha87"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
