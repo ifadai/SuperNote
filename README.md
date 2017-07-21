@@ -1,8 +1,10 @@
 # 发呆便签/SuperNote
 
 > 发呆便签/SuperNote是一款开源的Android便签，实现了主流便签的基本功能，并不断完善中。
+> 特点： Material Design设计、MVP设计模式；
 
 ## 应用商店地址：[Download](http://www.coolapk.com/apk/com.app.fadai.supernote)
+## GitHub地址：[代码](https://github.com/ifadai/SuperNote) 欢迎star
 
 ## 注意：
 代码下载后，App的反馈模块需要使用Bmob，请申请AppId后，在res/values/strings中修改bmob_app_id的值。
@@ -15,6 +17,7 @@
 3. 便签特殊时间的显示格式有误；
 4. 初始化时创建的便签的时间和内容；
 5. android7.0打开相机失败；
+
 #### -更新：
 1. 默认便签夹（随手记）可改名；
 
