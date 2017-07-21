@@ -7,7 +7,8 @@
 ## 代码地址：[GitHub](https://github.com/ifadai/SuperNote) 欢迎star
 
 ## 注意：
-代码下载后，App的反馈模块需要使用Bmob，请申请AppId后，在res/values/strings中修改bmob_app_id的值。
+1. 本程序代码只用于学习交流，不可商用；
+2. 代码下载后，App的反馈模块需要使用Bmob，请申请AppId后，在res/values/strings中修改bmob_app_id的值。
 
 ## 关于软件：
 
