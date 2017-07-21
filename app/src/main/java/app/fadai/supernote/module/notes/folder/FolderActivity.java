@@ -203,6 +203,7 @@ public class FolderActivity extends BaseActivity<IFolderView,FolderPresenter> im
             mProgressDialog.cancel();
     }
 
+
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         float rawY=event.getRawY();

@@ -214,7 +214,7 @@ public class EditNotePresenter extends BasePresenter<IEditNoteView> implements I
             createImageFile();
             Uri imageUri;
             if (Build.VERSION.SDK_INT >= 24) {
-                imageUri = FileProvider.getUriForFile(activity, "com.app.fadai.supernote.fileprovider", mImageFile);
+                imageUri = FileProvider.getUriForFile(activity, mView.getActivity().getPackageName()+".provider", mImageFile);
             } else {
                 imageUri = Uri.fromFile(mImageFile);
             }

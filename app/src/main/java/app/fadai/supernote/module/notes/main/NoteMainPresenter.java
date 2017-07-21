@@ -9,24 +9,25 @@ import android.view.MenuItem;
 
 import com.blankj.utilcode.util.FileUtils;
 import com.blankj.utilcode.util.Utils;
-import app.fadai.supernote.MainApplication;
-import app.fadai.supernote.adapter.RvNoteListAdapter;
-import app.fadai.supernote.bean.Note;
-import app.fadai.supernote.bean.NoteFolder;
-import app.fadai.supernote.constants.Constans;
-import app.fadai.supernote.constants.FolderListConstans;
-import app.fadai.supernote.constants.NoteListConstans;
-import app.fadai.supernote.constants.CacheManager;
-import app.fadai.supernote.model.INoteModel;
-import app.fadai.supernote.model.LoadDataCallBack;
-import app.fadai.supernote.model.NoteModel;
-import app.fadai.supernote.module.base.BasePresenter;
-import app.fadai.supernote.module.notes.folderList.IFolderListPresenter;
 import com.orhanobut.logger.Logger;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+import app.fadai.supernote.MainApplication;
+import app.fadai.supernote.adapter.RvNoteListAdapter;
+import app.fadai.supernote.bean.Note;
+import app.fadai.supernote.bean.NoteFolder;
+import app.fadai.supernote.constants.CacheManager;
+import app.fadai.supernote.constants.Constans;
+import app.fadai.supernote.constants.FolderListConstans;
+import app.fadai.supernote.constants.NoteListConstans;
+import app.fadai.supernote.model.INoteModel;
+import app.fadai.supernote.model.LoadDataCallBack;
+import app.fadai.supernote.model.NoteModel;
+import app.fadai.supernote.module.base.BasePresenter;
+import app.fadai.supernote.module.notes.folderList.IFolderListPresenter;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -158,6 +159,7 @@ public class NoteMainPresenter extends BasePresenter<INoteMainView> implements I
         if (TextUtils.isEmpty(content)) {
             removeNote(position);
             deleteNote(note, true);
+            refreshRv();
         } else {
             note.setNoteContent(content);
             note.setModifiedTime(modifiedTime);

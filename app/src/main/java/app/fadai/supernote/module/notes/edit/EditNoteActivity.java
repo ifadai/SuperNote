@@ -142,7 +142,7 @@ public class EditNoteActivity extends BaseActivity<IEditNoteView, EditNotePresen
 
     @Override
     public void deleteImage(ImageEntity imageEntity) {
-        mEdContent.getEditableText().replace(imageEntity.getStart(), imageEntity.getEnd(), "");
+        mEdContent.getEditableText().replace(imageEntity.getStart(), imageEntity.getEnd()+1, "");
     }
 
     @Override
@@ -224,9 +224,6 @@ public class EditNoteActivity extends BaseActivity<IEditNoteView, EditNotePresen
                 break;
             case R.id.menu_note_statistics:
                 mPresenter.calculateContentAndImageCount(mEdContent);
-                break;
-            case R.id.menu_note_test:
-                mPresenter.setTextForNoteContent();
                 break;
             case R.id.menu_note_share:
                 showShareDialg();

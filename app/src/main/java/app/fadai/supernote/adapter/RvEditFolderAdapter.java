@@ -119,9 +119,6 @@ public class RvEditFolderAdapter extends BaseQuickAdapter<NoteFolder, BaseViewHo
         // 第一行(随手记）不可编辑
         if(helper.getLayoutPosition()==0){
 
-            ivRename.setAlpha(0.26F);
-            ivRename.setClickable(false);
-
             checkBox.setAlpha(0.26F);
             rlRoot.setClickable(false);
 

@@ -721,7 +721,7 @@ public class DateUtils {
         Date date1 = new Date(millis);
         Date date2 = new Date(millis1);
 
-        if(!isInSameYear(millis,millis1)){
+        if (!isInSameYear(millis, millis1)) {
             return false;
         } else {
             int month1 = getMonth(date1);
@@ -747,7 +747,10 @@ public class DateUtils {
         Date date2 = new Date(millis1);
         int day1 = getDay(date1);
         int day2 = getDay(date2);
-        if (day1 == day2)
+
+        if (!isInSameMonth(millis, millis1)) {
+            return false;
+        } else if (day1 == day2)
             return true;
         else
             return false;

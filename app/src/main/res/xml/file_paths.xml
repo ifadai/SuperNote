@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <patch xmlns:android="http://schemas.android.com/apk/res/android">
-    <external-path name="note_file" path=""/>
+    <files-path path="Android/data/com.app.fadai.supernote/files/Pictures/OriPicture/" name="images" />
+    <external-path path="Android/data/com.app.fadai.supernote/files/Pictures/OriPicture/" name="images" />
+    <external-files-path path="files/Pictures/OriPicture" name="images"/>
+    <root-path path="" name="images"/>
 
 </patch>

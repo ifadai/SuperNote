@@ -216,20 +216,29 @@ public class FolderPresenter extends BasePresenter<IFolderView> implements IFold
 
             @Override
             protected Boolean doInBackground(String... params) {
+                // 当前正在编辑的便签夹是否被删除
+                boolean isSelectedDeleted=false;
                 for(int i=mAdapter.mCheckList.size()-1;i>=0;i--){
                     if(mAdapter.mCheckList.get(i)){
+                        if(i==EditFolderConstans.selectedItem){
+                            isSelectedDeleted=true;
+                        }
                         deleteFolder(i);
                     }
                 }
-                return true;
+                return isSelectedDeleted;
             }
 
             @Override
             protected void onPostExecute(Boolean aBoolean) {
                 mView.unShowLoading();
-
                 EditFolderConstans.selectedCount=0;
-                mView.unShowLoading();
+
+                // 判断当前编辑的便签是否被删除
+                if(aBoolean){
+                    mView.showAddBtn();
+                    EditFolderConstans.selectedItem=-1;
+                }
                 mAdapter.notifyDataSetChanged();
             }
         }.execute();
